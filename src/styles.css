@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    
+    header{
+        flex-flow: row nowrap; 
+        position: static; 
+      }
+
+    body{
+        background-color:azure; 
+        background-image: url("images/Fundo.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        position: static;
+
+    }
+
+
+    div.body-content{
+        /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+      padding-bottom: 55px;
+    }
+
+    footer{
+        text-align: center;
+        justify-content: center;
+        background-color:cadetblue; 
+        border: 3px; 
+        box-shadow: 0px -2px rgb(60, 106, 107);
+        height: 55px;
+        margin-top: 38%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: static;
+    }
+    button{
+    width: 120px;
+    height: 25px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin: 10px;
+    
+    /*Só um efeito (google)*/
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+button a{
+    color: white;
+    font-size: 22px;
+    font-family: cursive;  
+    text-decoration: none;
+    opacity: 1.0;
+}
+button:hover{
+   -webkit-animation: ani 0.5s linear;
+   -webkit-animation-fill-mode: forwards;
+   width: 130px;
+   height: 30px;
+   box-shadow: 5px 10px black;
+}
+
+nav button.active{
+  color: white;
+  background-color: #4682B4;
+  opacity: 1.0;
+}
+
+@-webkit-keyframes ani{
+    0%{
+        width: 120px;
+        height: 40px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 130px;
+        height: 50px;
+        opacity: 1.0;
+    }
+    
+}
+
+

@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  //LOCAL
+  production: false,
+  name: "Local",
+  severUrl: 'https://localhost:7079/api/Crypto/GetCrypto'
 };
 
 /*
