@@ -6,7 +6,7 @@ export const environment = {
   //LOCAL
   production: false,
   name: "Local",
-  severUrl: 'https://localhost:7079/api/Crypto/GetCrypto',
+  severUrl: 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=brl',
   firebase : {
     apiKey: "AIzaSyAslPnsjD6jUMYDoFxj1iSHTfmabZltXIE",
     authDomain: "bancoroleplayinggamemello.firebaseapp.com",

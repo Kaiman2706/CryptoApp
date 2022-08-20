@@ -47,7 +47,6 @@ export class TestComponent implements OnInit {
   }
 
   GetAll(): void {
-    var data = fetch(this.apiUrl).then(response => response.json())
     const dados = [];
 
     dados.push(fetch(this.apiUrl).then(response => response.json()))

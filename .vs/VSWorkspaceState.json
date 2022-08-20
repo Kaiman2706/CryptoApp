@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\environments"
   ],
+  "SelectedNode": "\\src\\app\\Crypto.ts",
   "PreviewInSolutionExplorer": false
 }

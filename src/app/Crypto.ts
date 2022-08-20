@@ -6,7 +6,7 @@ export interface Crypto{
     symbol:                       string;
     name:                         string;
     image:                        string;
-    currentPrice:                 number;
+    current_price:                 number;
     marketCap:                    number;
     marketCapRank:                number;
     fullyDilutedValuation:        number;
