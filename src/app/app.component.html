@@ -1,19 +1,21 @@
-<header>
-  <div style="background-color:cadetblue; border: 3px; box-shadow: 0px 2px rgb(60, 106, 107);">
-    <h1 style="margin-left: 10px; justify-content: flex-end; font-style: italic; display: inline-block;">Tudo 10</h1>
-      <nav >
-        <button routerLink="main" routerLinkActive="active">Tela inicial</button>
-        <button routerLink="home"  routerLinkActive="active">Home</button>
-        <button routerLink="conta"  routerLinkActive="active" >Conta</button>
-      </nav>
-  </div>
-</header>
 <body>
+  <header>
+    <div id="Logo">
+      <a href="index.html">
+        <img src="../assets/images/LogoR.png"  alt="Logo"/>
+        KF
+      </a> 
+    </div>
+      <nav id="menu">
+        <a routerLink="crypto"  routerLinkActive="active">Crypto</a>
+        <a routerLink="actions"  routerLinkActive="active" >Actions</a>
+      </nav>
+</header>
   <div style="margin-left: 10px;">
     
     <router-outlet></router-outlet>
   </div>
 </body>
 <footer>
-  <h3 style="margin-left: 80%">Develop by Kori and FCM</h3>
+  <h3>Develop by Kori and FCM</h3>
 </footer>

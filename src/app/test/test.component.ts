@@ -7,6 +7,8 @@ import{Crypto} from '../Crypto'
 import { NgModel } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 

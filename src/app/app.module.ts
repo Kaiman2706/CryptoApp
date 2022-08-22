@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {AngularFireModule} from '@angular/fire/compat';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +30,8 @@ import { environment } from 'src/environments/environment';
     MatInputModule,
     FormsModule,
     MatIconModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    
   ],
   providers: [AppComponent],
   bootstrap: [AppComponent]

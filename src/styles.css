@@ -1,25 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Press+Start+2P&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
 
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      
-    }
-    
+img{
+  max-width: 100%;
+}
+
+body{
+    background-color: #d8f0f0;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: Arial, Helvetica, sans-serif;
+}
     header{
-        flex-flow: row nowrap; 
-        position: static; 
+      min-width: 100%;
+      background-color: #282f37;
+      padding: 1em 0em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
       }
 
-    body{
-        background-color:azure; 
-        background-image: url("images/Fundo.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        position: static;
-
+    header h1{
+      /* margin-left: 10px;
+      justify-content: flex-end;
+      font-style: italic; 
+      display: inline-block;
+      min-width: 100%; */
+      /* flex: 1;
+      text-align: center;
+      font-family: 'Press Start 2P', fantasy; */
     }
+
+    #Logo{
+      flex: 1;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    #Logo a img{
+      width: 4em;
+      height: 2em;
+    }
+
+    #Logo a{
+      color: whitesmoke;
+      text-decoration: none;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 1em;
+      letter-spacing: 0.25em;
+      max-width: 20%;
+    }
+
+    #menu{
+      flex: 3;
+    }
+
+    #menu a{
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 1em;
+      padding:  1em 1em;
+      transition: 1s;
+    }
+
 
 
     div.body-content{
@@ -28,11 +81,13 @@
     }
 
     footer{
+      color: whitesmoke;
         text-align: center;
         justify-content: center;
-        background-color:cadetblue; 
+        align-items: center;
+        background-color: #282f37; 
         border: 3px; 
-        box-shadow: 0px -2px rgb(60, 106, 107);
+        box-shadow: 0px -2px #282f37;
         height: 55px;
         margin-top: 38%;
         width: 100%;
@@ -41,8 +96,8 @@
         position: static;
     }
     button{
-    width: 120px;
-    height: 25px;
+    width: 10em;
+    height: 2em;
     background-color: white;
     opacity: 0.5;
     border-radius: 10px;

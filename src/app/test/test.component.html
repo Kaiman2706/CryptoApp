@@ -1,17 +1,21 @@
 
-<div style="margin: 20px; color: black;">
-    <mat-form-field>
-        <input matInput [(ngModel)]="busque" [placeholder]="''" />
-    </mat-form-field>
+<h1 style="text-align: center; font-family: cursive;">Cryptos</h1>
+<div style="margin: 1em; color: black; text-align: center;">
+
+<div>
+    <mat-form-field appearance="standard">
+        <input matInput [(ngModel)]="busque" placeholder="Digite...">
+      </mat-form-field>
 
     <button (click)="GetAll()">
         <i>Pesquisar</i>
     </button>
+</div> 
+
 </div>
 
 <div
     style="align-items: center; justify-content: center; text-align: center; align-items: stretch; align-content: center ;">
-    <h1 style="text-align: center; font-family: cursive;">Cryptos</h1>
     <div *ngFor="let item of crypt" style="display: inline-block;">
         <div *ngIf="item.name != ' '">
             <div *ngIf="busque == ''">
